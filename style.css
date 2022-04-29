@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Jogo da Velha */
+h1{
+    font-size: 1.2em;
+    margin-block: 2%;
+    padding: 2%;
+    border: 2px solid rgb(182, 180, 180);
+    background-color: rgb(247, 237, 226) ;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid gray;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+.o{
+    position: relative;
+}
+.o::after{
+    content: "O";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 100px;
+}
+
+.x{
+    position: relative;
+}
+.x::after{
+    content: "X";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 100px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: lightblue;
+    display: none;
+}
